@@ -7,7 +7,7 @@ public class AleatorioEmple {
 	public static void main(String[] args) throws IOException {
 		crear();
 		leer();
-		System.out.println(" - - - Mensaje leer - - - - ");
+		System.out.println(" - - - Mensaje main - - - - ");
 	
 		
 	}
@@ -19,6 +19,7 @@ public class AleatorioEmple {
 		String nom;
 		double salario;
 		int pos, num, dep;
+	
 		if (file.length() > 0) {
 			pos = 0;
 			System.out.println(" ------------------------------------------");
@@ -48,6 +49,9 @@ public class AleatorioEmple {
 
 	public static void crear() throws IOException {
 		File fichero = new File("AleatorioEmple.dat");
+		
+		System.out.println(" - - - Mensaje en crear - - - - ");
+		
 		RandomAccessFile file = new RandomAccessFile(fichero, "rw");
 		String apellido[] = { "FERNANDEZ", "GIL", "LOPEZ", "RAMOS", "SEVILLA", "CASILLA", "REY" };
 		int dep[] = { 10, 20, 10, 10, 30, 30, 20 }; 
