@@ -20,6 +20,8 @@ public class AleatorioEmple {
 		double salario;
 		int pos, num, dep;
 	
+		System.out.println(" - - - Mensaje en leer - - - - ");
+		
 		if (file.length() > 0) {
 			pos = 0;
 			System.out.println(" ------------------------------------------");
